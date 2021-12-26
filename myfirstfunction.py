@@ -7,8 +7,8 @@ class MyFirstFunction(Function):
         f.write("MyFirstFunction started!" + "\n")
         f.close()
         self.current_tl_usd_currency=14.5
-        self.smartphone_topic = "persistent://public/default/smartphone"
-        self.computer_topic = "persistent://public/default/computer"
+        self.smartphone_topic = "persistent://public/default/topic-smartphone"
+        self.computer_topic = "persistent://public/default/topic-computer"
 
     def process(self, item, context):
         f=open("functionlogs.txt","a")
@@ -34,3 +34,5 @@ class MyFirstFunction(Function):
         f.write("OUTPUT ITEM" + "\n")
         f.write(json.dumps(data) + "\n")
         f.close()
+
+
