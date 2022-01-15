@@ -34,13 +34,3 @@ class MyFirstFunction(Function):
         f.write("OUTPUT ITEM" + "\n")
         f.write(json.dumps(data) + "\n")
         f.close()
-
-
-./bin/pulsar-admin functions delete --tenant public --namespace default --name myfirstfunction
-
-
-./bin/pulsar-admin functions list --tenant public --namespace default
-
-
-bin/pulsar-admin functions create --py myfirstfunction.py --classname myfirstfunction.MyFirstFunction --tenant public --namespace default --name myfirstfunction --inputs persistent://public/default/topic-new-product
-
