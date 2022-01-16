@@ -2,6 +2,11 @@
 This repo is created to store my pulsar function demo. 
 This function can modify each message on the given input topic and route them to the related topic.
 
+#### Find your Pulsar docker container ID.
+docker container ls
+
+#### Enter your Pulsar docker container with the containerID to run process on the container. Starting bash terminal.
+docker exec -it containerID bash
 
 #### How to list Pulsar function on Pulsar broker?
 
